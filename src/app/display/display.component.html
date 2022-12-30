@@ -1,0 +1,30 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            <h1>
+                <i class="fa-solid fa-eye"></i>&nbsp;
+                Random display
+            </h1>
+        </div>
+    </div>
+
+    <!-- View contact details -->
+
+    <div class="container mt-4 mb-5">
+        <div class="row border p-5 align-items-center">
+            <div class="col-md-4">
+                <img [src]="image" alt="no image" width="100px">
+                <br>
+                <button class="btn btn-warning ms-2 mt-5" (click)="reload()" value="random">Refresh</button>
+            </div>
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item">Name: <b>{{name}}</b></li>
+                    <li class="list-group-item">Email: <b>{{email}}</b></li>
+                    <li class="list-group-item">mobile: <b>{{mobile}}</b></li>
+                    <li class="list-group-item">Gender: <b>{{gender}}</b></li>
+                    <li class="list-group-item">Age: <b>{{age}}</b></li>
+                    <li class="list-group-item">Address: <b>{{address}}</b></li>
+                </ul>
+            </div>
+        </div>
